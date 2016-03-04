@@ -92,6 +92,10 @@
     <Compile Include="AppDelegate.cs" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
+    <Compile Include="NewsTableController.cs" />
+    <Compile Include="NewsTableController.designer.cs">
+      <DependentUpon>NewsTableController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
