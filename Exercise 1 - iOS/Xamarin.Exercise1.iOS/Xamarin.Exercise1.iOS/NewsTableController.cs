@@ -16,8 +16,6 @@ namespace Xamarin.Exercise1.iOS
 
             _items.Add(new Tuple<string, string>("Microsoft köper Xamarin", "Nu är det klart att Microsoft köper det San Francisco baserade företaget Xamarin"));
             _items.Add(new Tuple<string, string>("Sogeti i topp", "Sogeti är än en gång i topp!"));
-
-            //TableView.Source = new TableSour
         }
 
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
@@ -29,7 +27,6 @@ namespace Xamarin.Exercise1.iOS
             {
                 cell = new NewsItemCell(Handle);
             }
-
 
             cell.SetValues(_items[indexPath.Row].Item1, _items[indexPath.Row].Item2);
 
