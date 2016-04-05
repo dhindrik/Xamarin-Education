@@ -129,7 +129,7 @@
         </scene>
         <scene sceneID="157">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="158" sceneMemberID="viewController">
+                <tabBarController definesPresentationContext="YES" id="158" sceneMemberID="viewController" storyboardIdentifier="MainTabs">
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="163">
                         <rect key="frame" x="0.0" y="618" width="375" height="49"/>
@@ -165,7 +165,7 @@
         </scene>
         <scene sceneID="176">
             <objects>
-                <tableViewController id="177" sceneMemberID="viewController" storyboardIdentifier="MainTabs" customClass="NewsTableController">
+                <tableViewController id="177" sceneMemberID="viewController" customClass="NewsTableController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="22" sectionFooterHeight="22" id="178">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

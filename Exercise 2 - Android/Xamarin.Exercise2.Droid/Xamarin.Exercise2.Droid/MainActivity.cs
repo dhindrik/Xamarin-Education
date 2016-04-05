@@ -8,7 +8,7 @@ using Android.OS;
 
 namespace Xamarin.Exercise2.Droid
 {
-    [Activity(Label = "Xamarin.Exercise2.Droid", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Welcome", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         int count = 1;
@@ -22,9 +22,14 @@ namespace Xamarin.Exercise2.Droid
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
+            Button button = FindViewById<Button>(Resource.Id.LetsGo);
 
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            button.Click += Button_Click;
+        }
+
+        private void Button_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(CreateUserActivity));
         }
     }
 }
